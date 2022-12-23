@@ -1,0 +1,9 @@
+org\alex\main\MyMesageDI.class
+org\alex\servise\EmailService.class
+org\alex\injector\EmailInjector.class
+org\alex\consumer\Consumer.class
+org\alex\consumer\MyApplication.class
+org\alex\servise\SMSService.class
+org\alex\servise\MessageService.class
+org\alex\injector\MessageServiceInjector.class
+org\alex\injector\SMSInjector.class
