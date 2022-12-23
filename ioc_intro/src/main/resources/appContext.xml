@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder location="classpath:aplic.properties"/>
+
+    <bean id="pet" class="animals.Dog"/>
+
+    <bean id="pet2" class="animals.Cat"/>
+
+    <bean id="person" class="depend_inject.Person">
+        <property name="pet" ref="pet"/>
+        <property name="surname" value="${person.surname}"/>
+        <property name="age" value="${person.age}"/>
+    </bean>
+
+    <bean id="person2" class="depend_inject.Person">
+        <property name="pet" ref="pet2"/>
+        <property name="surname" value="${person2.surname}"/>
+        <property name="age" value="${person2.age}"/>
+    </bean>
+
+
+</beans>

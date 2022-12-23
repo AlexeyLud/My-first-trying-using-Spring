@@ -1,0 +1,4 @@
+org/alex/MainTest.class
+org/alex/service/CaseInvertorServiceTest.class
+org/alex/server/CreateAndStartServerTest.class
+org/alex/validate/LetterValidatorTest.class

@@ -1,0 +1,5 @@
+org/alex/Main.class
+org/alex/service/CaseInvertorService.class
+org/alex/input/InputStringChecking.class
+org/alex/validate/LetterValidator.class
+org/alex/server/CreateAndStartServer.class
